@@ -7,7 +7,7 @@
     <ProjectGuid>{201CCD48-F1F1-4AA5-B9A3-92BFAEF3C6A8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Triangles</RootNamespace>
+    <RootNamespace>Triangle</RootNamespace>
     <AssemblyName>Triangles</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -32,6 +32,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.core">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.core.interfaces">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.core.interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.util">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.util.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NUnit.VisualStudio.TestAdapter">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,11 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Triangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
