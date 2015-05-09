@@ -16,7 +16,7 @@ namespace Triangle
     private String[] args1;
     private bool main_Called = false;
 
-    public void Triangle(int _side1, int _side2, int _side3) {
+    public Triangle(int _side1, int _side2, int _side3) {
         side1 = _side1;
         side2 = _side2;
         side3 = _side3;
